@@ -44,3 +44,27 @@ Este projeto foi desenvolvido para praticar:
 Desenvolvido por Luis Eduardo Henrique Gabriel como projeto acadêmico do curso de Análise e Desenvolvimento de Sistemas.
 
 02/09/2026 - Avaliação em Pares - 7.0
+
+# Avaliação Em pares:
+
+## Semântica e Acessibilidade
+
+Foram identificados pontos de melhoria relacionados às boas práticas de HTML e acessibilidade, como a ausência do atributo `alt` na imagem, a utilização de elementos `<label>` vazios e o excesso de comentários no código.
+
+## HTML semântico
+
+A utilização de HTML semântico é limitada e o elemento `<nav>` não está sendo empregado de acordo com sua finalidade semântica, uma vez que contém apenas uma imagem e não apresenta elementos de navegação.
+
+## Multimidia com HTML
+
+Quanto à multimídia, embora o elemento `<audio>` esteja presente, o arquivo `The_Final_Ascent.mp3`, referenciado pelo código, não está presente no repositório, impossibilitando a reprodução do recurso na versão entregue.
+
+## Pontos de atenção
+
+Por fim, o formulário referencia `pagina2.html` em seu atributo `action`, porém esse arquivo também não está presente no repositório, caracterizando uma possível inconsistência no fluxo da aplicação.
+
+---
+
+# AVALIAÇÃO GERAL
+
+De modo geral, o projeto demonstra uma implementação funcional básica, porém apresenta pontos relevantes de melhoria para que a estrutura HTML seja considerada plenamente adequada aos critérios da atividade.
