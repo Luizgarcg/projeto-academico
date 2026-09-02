@@ -7,27 +7,76 @@
     <link rel="stylesheet" href="style.css" />
     <title>login</title>
   </head>
+  <!-- O 'body' contém todo o conteúdo visível da página -->
   <body>
+    
+    <!-- Container principal para agrupar e estruturar todos os elementos do login -->
     <div class="container">
-      <header >
+      <!-- Cabeçalho do card/conteúdo de login -->
+      <header>
+        <!-- Título principal de boas-vindas -->
         <h1>BEM VINDO</h1>
       </header>
-      <nav><img src="https://i.pinimg.com/1200x/78/a4/e7/78a4e72ffed2f4601344d453bdcec5d4.jpg" ></nav>
-      <form  action="pagina2.html" method="post">
-        <div><i class="material-icons">face</i>
+      
+      <!-- Seção usada para exibir a imagem de topo/perfil -->
+      <nav>
+        <!-- Imagem carregada a partir de uma URL externa -->
+        <img src="https://i.pinimg.com/1200x/f7/ea/81/f7ea811d652195f3f08c29a8c7132b1f.jpg">
+      </nav>
+      
+      <!-- Formulário de login:
+           - action="pagina2.html": redireciona para esta página ao enviar
+           - method="post": envia os dados do formulário no corpo da requisição (mais seguro para senhas) -->
+      <form action="pagina2.html" method="post">
+        
+        <!-- Agrupamento do campo de e-mail -->
+        <div>
+          <!-- Ícone visual de perfil/rosto fornecido pelo Material Icons -->
+          <i class="material-icons">face</i>
 
+          <!-- Input para e-mail:
+               - type="email": valida automaticamente se é um e-mail válido
+               - name="email": identificador do dado enviado ao servidor
+               - id="email": identificador único para associar ao CSS/JavaScript ou label
+               - placeholder="email": texto de dica visível enquanto o campo está vazio
+               - required: torna o preenchimento obrigatório antes de enviar -->
           <input type="email" name="email" id="email" placeholder="email" required/>
+          
+          <!-- Rótulo associado ao input de e-mail (atualmente sem texto interno) -->
           <label for="email"></label>
         </div>
 
-        <div><i class="material-icons">lock</i>
+        <!-- Agrupamento do campo de senha -->
+        <div>
+          <!-- Ícone visual de cadeado fornecido pelo Material Icons -->
+          <i class="material-icons">lock</i>
 
+          <!-- Input para senha:
+               - type="password": oculta os caracteres digitados por segurança
+               - name="password": identificador da senha para o backend
+               - id="password": identificador único para CSS/JS/label
+               - placeholder="senha": texto de dica dentro do campo
+               - required: torna o preenchimento obrigatório -->
           <input type="password" name="password" id="password" placeholder="senha" required/>
+          
+          <!-- Rótulo associado ao input de senha (atualmente sem texto interno) -->
           <label for="password"></label>
         </div>
 
-        <div><input class="btn" type="submit" value="Entrar" /></div>
+        <!-- Agrupamento do botão de envio -->
+        <div>
+          <!-- Botão para enviar o formulário:
+               - class="btn": permite estilizar o botão via CSS
+               - type="submit": dispara a ação do formulário ao ser clicado
+               - value="Entrar": texto que aparece dentro do botão -->
+          <input class="btn" type="submit" value="Entrar" />
+          <audio src="The_Final_Ascent.mp3" type="audio/mpeg" autoplay loop></audio>
+        </div>
       </form>
     </div>
+
+
+
+    
   </body>
 </html>
