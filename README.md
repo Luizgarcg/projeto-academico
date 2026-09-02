@@ -42,3 +42,5 @@ Este projeto foi desenvolvido para praticar:
 * Organização de projetos front-end.👨‍💻 Autor
 
 Desenvolvido por Luis Eduardo Henrique Gabriel como projeto acadêmico do curso de Análise e Desenvolvimento de Sistemas.
+
+02/09/2026 - Avaliação em Pares - 7.0
