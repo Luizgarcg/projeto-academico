@@ -53,7 +53,8 @@ text-align: center;
 
 .btn{background-color:rgba(255, 222, 253, 0.923);
 border: 1px solid rgba(218, 205, 205, 0.427);
-color: rgb(79, 62, 88);}
+color: rgb(79, 62, 88);
+transition: transform 0.8s;}
 
 input::placeholder{color: rgb(145, 87, 130);
 text-align: center;}
@@ -63,3 +64,11 @@ transform: scale(1.1);}
 
 i{color: white;}
 
+
+svg{fill: rgb(230, 228, 118);
+  height: 50px;
+  transition: transform 0.7s;
+  margin-bottom: 10px;
+}
+
+svg:hover{transform: scale(1.5);}
