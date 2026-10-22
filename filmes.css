@@ -1,0 +1,64 @@
+/* filmes.css — tema da página filmes. Carregar DEPOIS do style1.css */
+:root {
+    --fundo: #120A0A;
+    --texto: #F2E9DC;
+    --cartao: #1E1212;
+    --borda: #4A2A2A;
+    --destaque: #E0B04B;
+    --texto-destaque: #1A1209;
+    --cabecalho: #120A0A;
+    --texto-cabecalho: #F2E9DC;
+    --fonte: Georgia, 'Times New Roman', serif;
+    --raio: 2px;
+}
+
+body,
+#container-principal {
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: var(--fonte);
+}
+
+#cabecalho-principal {
+    background-color: var(--cabecalho);
+    color: var(--texto-cabecalho);
+}
+
+.logo h1 { color: var(--destaque); }
+
+.link-menu { color: var(--texto-cabecalho); text-decoration: none; padding-bottom: 4px; }
+.link-menu:hover,
+.link-menu.ativo { color: var(--destaque); border-bottom: 2px solid var(--destaque); }
+
+.cartao-noticia,
+.bloco-lateral {
+    background-color: var(--cartao);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    color: var(--texto);
+}
+
+.categoria { color: var(--destaque); font-weight: bold; }
+
+.botao-ler-mais,
+.botao-enviar {
+    background-color: var(--destaque);
+    color: var(--texto-destaque);
+    border: none;
+    border-radius: var(--raio);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.titulo-lateral { color: var(--destaque); border-bottom: 2px solid var(--destaque); padding-bottom: 6px; }
+.lista-mais-lidas a { color: var(--texto); }
+.lista-mais-lidas a:hover { color: var(--destaque); }
+
+#rodape-principal { background-color: var(--cabecalho); color: var(--texto-cabecalho); }
+
+/* Detalhes de cinema */
+.logo h1 { letter-spacing: 3px; }
+.titulo-noticia { font-style: italic; }
+.noticia-destaque { border: 2px solid #C0392B; }
+.categoria { color: #C0392B; }
+.imagem-noticia { filter: contrast(1.05) saturate(0.9); }

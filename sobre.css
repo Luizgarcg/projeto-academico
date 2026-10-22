@@ -1,0 +1,69 @@
+/* sobre.css — tema da página sobre. Carregar DEPOIS do style1.css */
+:root {
+    --fundo: #F7F5F0;
+    --texto: #2B2B2B;
+    --cartao: #FFFFFF;
+    --borda: #DDD6C8;
+    --destaque: #2E7D5B;
+    --texto-destaque: #FFFFFF;
+    --cabecalho: #2B2B2B;
+    --texto-cabecalho: #F7F5F0;
+    --fonte: Verdana, Arial, sans-serif;
+    --raio: 10px;
+}
+
+body,
+#container-principal {
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: var(--fonte);
+}
+
+#cabecalho-principal {
+    background-color: var(--cabecalho);
+    color: var(--texto-cabecalho);
+}
+
+.logo h1 { color: var(--destaque); }
+
+.link-menu { color: var(--texto-cabecalho); text-decoration: none; padding-bottom: 4px; }
+.link-menu:hover,
+.link-menu.ativo { color: var(--destaque); border-bottom: 2px solid var(--destaque); }
+
+.cartao-noticia,
+.bloco-lateral {
+    background-color: var(--cartao);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    color: var(--texto);
+}
+
+.categoria { color: var(--destaque); font-weight: bold; }
+
+.botao-ler-mais,
+.botao-enviar {
+    background-color: var(--destaque);
+    color: var(--texto-destaque);
+    border: none;
+    border-radius: var(--raio);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.titulo-lateral { color: var(--destaque); border-bottom: 2px solid var(--destaque); padding-bottom: 6px; }
+.lista-mais-lidas a { color: var(--texto); }
+.lista-mais-lidas a:hover { color: var(--destaque); }
+
+#rodape-principal { background-color: var(--cabecalho); color: var(--texto-cabecalho); }
+
+/* Layout da página Sobre */
+.logo h1 { color: #2E7D5B; }
+.area-sobre { display: grid; gap: 20px; }
+.bloco-sobre {
+    padding: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDD6C8;
+    border-radius: 10px;
+}
+.bloco-sobre p { margin: 10px 0; line-height: 1.7; max-width: 65ch; }
+.lista-sobre { margin: 10px 0 0 20px; line-height: 1.9; }

@@ -1,0 +1,60 @@
+/* noticias.css — tema da página noticias. Carregar DEPOIS do style1.css */
+:root {
+    --fundo: #0B1F2A;
+    --texto: #E6F2EC;
+    --cartao: #12303F;
+    --borda: #1F4A5E;
+    --destaque: #3DDC84;
+    --texto-destaque: #073042;
+    --cabecalho: #073042;
+    --texto-cabecalho: #E6F2EC;
+    --fonte: 'Segoe UI', Arial, sans-serif;
+    --raio: 8px;
+}
+
+body,
+#container-principal {
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: var(--fonte);
+}
+
+#cabecalho-principal {
+    background-color: var(--cabecalho);
+    color: var(--texto-cabecalho);
+}
+
+.logo h1 { color: var(--destaque); }
+
+.link-menu { color: var(--texto-cabecalho); text-decoration: none; padding-bottom: 4px; }
+.link-menu:hover,
+.link-menu.ativo { color: var(--destaque); border-bottom: 2px solid var(--destaque); }
+
+.cartao-noticia,
+.bloco-lateral {
+    background-color: var(--cartao);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    color: var(--texto);
+}
+
+.categoria { color: var(--destaque); font-weight: bold; }
+
+.botao-ler-mais,
+.botao-enviar {
+    background-color: var(--destaque);
+    color: var(--texto-destaque);
+    border: none;
+    border-radius: var(--raio);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.titulo-lateral { color: var(--destaque); border-bottom: 2px solid var(--destaque); padding-bottom: 6px; }
+.lista-mais-lidas a { color: var(--texto); }
+.lista-mais-lidas a:hover { color: var(--destaque); }
+
+#rodape-principal { background-color: var(--cabecalho); color: var(--texto-cabecalho); }
+
+/* Notícia principal ganha um destaque lateral verde */
+.noticia-destaque { border-left: 6px solid #3DDC84; }
