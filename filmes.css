@@ -62,3 +62,17 @@ body,
 .noticia-destaque { border: 2px solid #C0392B; }
 .categoria { color: #C0392B; }
 .imagem-noticia { filter: contrast(1.05) saturate(0.9); }
+.artigo-completo {
+    background-color: var(--cartao);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    color: var(--texto);
+}
+.artigo-completo .titulo-artigo {
+    color: var(--destaque);
+    font-style: italic;
+}
+.botao-voltar {
+    background-color: var(--destaque);
+    color: var(--texto-destaque);
+}

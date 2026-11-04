@@ -58,3 +58,16 @@ body,
 
 /* Notícia principal ganha um destaque lateral verde */
 .noticia-destaque { border-left: 6px solid #3DDC84; }
+.artigo-completo {
+    background-color: var(--cartao);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    color: var(--texto);
+}
+.artigo-completo .titulo-artigo {
+    color: var(--destaque);
+}
+.botao-voltar {
+    background-color: var(--destaque);
+    color: var(--texto-destaque);
+}

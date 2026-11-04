@@ -68,3 +68,16 @@ body,
 }
 .logo h1 { color: #FFD23F; }
 .noticia-destaque { border-top: 6px solid #2F5BEA; }
+.artigo-completo {
+    background-color: var(--cartao);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    color: var(--texto);
+}
+.artigo-completo .titulo-artigo {
+    color: var(--destaque);
+}
+.botao-voltar {
+    background-color: var(--destaque);
+    color: var(--texto-destaque);
+}

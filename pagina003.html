@@ -18,56 +18,76 @@
                 <h1>Portal Gamer</h1>
             </div>
             <nav class="menu-navegacao">
-                <a href="noticias.html" class="link-menu">Notícias</a>
-                <a href="filmes.html" class="link-menu">Filmes</a>
-                <a href="analises.html" class="link-menu ativo">Análises</a>
-                <a href="sobre.html" class="link-menu">Sobre</a>
+                <a href="index.html" class="link-menu">Início</a>
+                <a href="pagina001.html" class="link-menu">Notícias</a>
+                <a href="pagina002.html" class="link-menu">Filmes</a>
+                <a href="pagina003.html" class="link-menu ativo">Análises</a>
+                <a href="pagina004.html" class="link-menu">Sobre</a>
             </nav>
         </header>
 
         <!-- Conteúdo Principal (Grid do Conteúdo + Barra Lateral) -->
         <main id="conteudo-principal">
 
-            <section id="secao-analises" class="area-noticias">
+            <section id="secao-analises" class="area-noticias" data-pagina="analises">
 
-                <article class="cartao-noticia noticia-destaque">
-                    <img src="https://i.pinimg.com/736x/6e/54/f9/6e54f9bbaf2ceca84e51c6d5817602b8.jpg" alt="Jogo analisado" class="imagem-noticia">
+                <!-- 1. Destaque (ocupa as 2 colunas inteiras) -->
+                <article class="cartao-noticia noticia-destaque" data-noticia-id="analise-01">
+                    <img src="https://i.pinimg.com/736x/6e/54/f9/6e54f9bbaf2ceca84e51c6d5817602b8.jpg" alt="Jogo analisado RPG" class="imagem-noticia">
                     <div class="conteudo-noticia">
                         <span class="categoria">Análise</span>
                         <h2 class="titulo-noticia">Análise: o RPG do ano entrega o que promete?</h2>
-                        <p class="resumo-noticia">Testamos a campanha, o combate e o desempenho em diferentes configurações de PC.</p>
-                        <span class="nota-analise">Nota 9/10</span>
-                        <a href="#" class="botao-ler-mais">Ler análise</a>
+                        <span class="nota-analise" style="align-self: flex-start; margin: 4px 0 8px 0;">Nota 9/10</span>
+                        <p class="resumo-noticia">Testamos a campanha de 70 horas, o combate dinâmico e o desempenho gráfico em múltiplos PCs.</p>
+                        <button type="button" class="botao-ler-mais" data-abrir-noticia="analise-01">Ler análise</button>
                     </div>
                 </article>
-                <article class="cartao-noticia">
+
+                <!-- 2. Linha 2, Coluna 1 -->
+                <article class="cartao-noticia" data-noticia-id="analise-02">
                     <img src="https://i.pinimg.com/736x/02/0a/38/020a38f4f1534da8dc676de71e97a04d.jpg" alt="Jogo de ação" class="imagem-noticia">
                     <div class="conteudo-noticia">
                         <span class="categoria">Análise</span>
                         <h3 class="titulo-noticia">Análise: atualização transforma o jogo de ação</h3>
-                        <p class="resumo-noticia">O novo mapa e os personagens corrigem os maiores problemas da versão anterior.</p>
-                        <span class="nota-analise">Nota 8/10</span>
-                        <a href="#" class="botao-ler-mais">Ler análise</a>
+                        <span class="nota-analise" style="align-self: flex-start; margin: 4px 0 8px 0;">Nota 8/10</span>
+                        <p class="resumo-noticia">O novo mapa polar e o recalibre das armas corrigem os maiores problemas da versão anterior.</p>
+                        <button type="button" class="botao-ler-mais" data-abrir-noticia="analise-02">Ler análise</button>
                     </div>
                 </article>
-                <article class="cartao-noticia">
+
+                <!-- 3. Linha 2, Coluna 2 -->
+                <article class="cartao-noticia" data-noticia-id="analise-03">
                     <img src="https://i.pinimg.com/736x/18/6c/86/186c8635dc52a3d0fa963e1671ede064.jpg" alt="Placa de vídeo" class="imagem-noticia">
                     <div class="conteudo-noticia">
                         <span class="categoria">Hardware</span>
                         <h3 class="titulo-noticia">Análise: a nova placa de vídeo vale o preço?</h3>
-                        <p class="resumo-noticia">Comparamos FPS, temperatura e consumo com a geração anterior.</p>
-                        <span class="nota-analise">Nota 7/10</span>
-                        <a href="#" class="botao-ler-mais">Ler análise</a>
+                        <span class="nota-analise" style="align-self: flex-start; margin: 4px 0 8px 0;">Nota 7/10</span>
+                        <p class="resumo-noticia">Comparamos FPS em 4K nativo, temperaturas e consumo energético com a geração anterior em bancada.</p>
+                        <button type="button" class="botao-ler-mais" data-abrir-noticia="analise-03">Ler análise</button>
                     </div>
                 </article>
-                <article class="cartao-noticia">
+
+                <!-- 4. Linha 3, Coluna 1 -->
+                <article class="cartao-noticia" data-noticia-id="analise-04">
                     <img src="https://i.pinimg.com/736x/31/ee/1a/31ee1abd11177dfe998cb250a93d87f4.jpg" alt="Jogo de aventura" class="imagem-noticia">
                     <div class="conteudo-noticia">
                         <span class="categoria">Análise</span>
                         <h3 class="titulo-noticia">Análise: aventura indie surpreende pela história</h3>
-                        <p class="resumo-noticia">Curto, mas com uma narrativa que fica na cabeça depois dos créditos.</p>
-                        <span class="nota-analise">Nota 8/10</span>
-                        <a href="#" class="botao-ler-mais">Ler análise</a>
+                        <span class="nota-analise" style="align-self: flex-start; margin: 4px 0 8px 0;">Nota 8/10</span>
+                        <p class="resumo-noticia">Curto e poético, o título cativa com manipulação fotográfica e uma trilha sonora memorável.</p>
+                        <button type="button" class="botao-ler-mais" data-abrir-noticia="analise-04">Ler análise</button>
+                    </div>
+                </article>
+
+                <!-- 5. Linha 3, Coluna 2 (Preenche perfeitamente o grid!) -->
+                <article class="cartao-noticia" data-noticia-id="analise-05">
+                    <img src="https://i.pinimg.com/736x/18/6c/86/186c8635dc52a3d0fa963e1671ede064.jpg" alt="Headset gamer" class="imagem-noticia">
+                    <div class="conteudo-noticia">
+                        <span class="categoria">Hardware</span>
+                        <h3 class="titulo-noticia">Análise: headset gamer sem fio com cancelamento ativo</h3>
+                        <span class="nota-analise" style="align-self: flex-start; margin: 4px 0 8px 0;">Nota 9/10</span>
+                        <p class="resumo-noticia">Testamos a fidelidade sonora espacial, conforto com espuma viscoelástica e bateria de 80 horas.</p>
+                        <button type="button" class="botao-ler-mais" data-abrir-noticia="analise-05">Ler análise</button>
                     </div>
                 </article>
 
@@ -78,17 +98,17 @@
                 <div class="bloco-lateral">
                     <h3 class="titulo-lateral">Melhores Notas</h3>
                     <ul class="lista-mais-lidas">
-                        <li><a href="#">1. RPG do ano – 9/10</a></li>
-                        <li><a href="#">2. Aventura indie – 8/10</a></li>
-                        <li><a href="#">3. Jogo de ação atualizado – 8/10</a></li>
+                        <li><a href="#" data-abrir-noticia="analise-01">1. RPG do ano – 9/10</a></li>
+                        <li><a href="#" data-abrir-noticia="analise-05">2. Headset gamer sem fio – 9/10</a></li>
+                        <li><a href="#" data-abrir-noticia="analise-04">3. Aventura indie – 8/10</a></li>
                     </ul>
                 </div>
 
                 <div class="bloco-lateral">
                     <h3 class="titulo-lateral">Newsletter</h3>
                     <p>Receba as novidades no seu e-mail:</p>
-                    <form class="formulario-newsletter">
-                        <input type="email" placeholder="Seu e-mail..." class="campo-email">
+                    <form class="formulario-newsletter" onsubmit="event.preventDefault(); alert('Inscrição realizada com sucesso!');">
+                        <input type="email" placeholder="Seu e-mail..." class="campo-email" required>
                         <button type="submit" class="botao-enviar">Inscrever</button>
                     </form>
                 </div>
@@ -104,5 +124,7 @@
 
     </div>
 
+    <!-- Script JavaScript para notícias dinâmicas e modal leitor -->
+    <script src="noticias.js"></script>
 </body>
 </html>

@@ -18,10 +18,11 @@
                 <h1>Portal Gamer</h1>
             </div>
             <nav class="menu-navegacao">
-                <a href="noticias.html" class="link-menu">Notícias</a>
-                <a href="filmes.html" class="link-menu">Filmes</a>
-                <a href="analises.html" class="link-menu">Análises</a>
-                <a href="sobre.html" class="link-menu ativo">Sobre</a>
+                <a href="index.html" class="link-menu">Início</a>
+                <a href="pagina001.html" class="link-menu">Notícias</a>
+                <a href="pagina002.html" class="link-menu">Filmes</a>
+                <a href="pagina003.html" class="link-menu">Análises</a>
+                <a href="pagina004.html" class="link-menu ativo">Sobre</a>
             </nav>
         </header>
 
@@ -33,16 +34,21 @@
                 <article class="bloco-sobre">
                     <h2 class="titulo-noticia">Sobre o Portal Gamer</h2>
                     <p>O Portal Gamer é um portal de notícias sobre games, filmes baseados em jogos e análises de lançamentos e hardware.</p>
-                    <p>Nosso objetivo é trazer informação clara e rápida para quem gosta de jogar, sem enrolação.</p>
+                    <p>Nosso objetivo é trazer informação clara e rápida para quem gosta de jogar, sem enrolação e com foco na comunidade gamer.</p>
                 </article>
 
                 <article class="bloco-sobre">
                     <h3 class="titulo-noticia">O que você encontra aqui</h3>
                     <ul class="lista-sobre">
-                        <li><strong>Notícias:</strong> lançamentos, atualizações e novidades de hardware.</li>
-                        <li><strong>Filmes:</strong> adaptações de jogos para cinema e TV.</li>
-                        <li><strong>Análises:</strong> testes com nota de 0 a 10.</li>
+                        <li><strong>Notícias:</strong> lançamentos, atualizações e novidades de hardware em primeira mão.</li>
+                        <li><strong>Filmes:</strong> bastidores e estreias de adaptações de jogos para o cinema e streaming.</li>
+                        <li><strong>Análises:</strong> análises sinceras e completas com notas de 0 a 10 e benchmarks detalhados.</li>
                     </ul>
+                </article>
+
+                <article class="bloco-sobre">
+                    <h3 class="titulo-noticia">Nossa Missão e Grid de Conteúdo</h3>
+                    <p>Construído pensando na experiência de leitura moderna, nosso layout em CSS Grid garante preenchimento total dos espaços e fluidez tanto em monitores ultrawide quanto em smartphones. Navegue pelas nossas páginas e fique por dentro do ecossistema dos games.</p>
                 </article>
 
             </section>
@@ -51,14 +57,14 @@
             <aside id="barra-lateral">
                 <div class="bloco-lateral">
                     <h3 class="titulo-lateral">Contato</h3>
-                    <p>contato@portalgamer.com</p>
-                    <p>Fale com a redação para sugerir pautas ou reportar erros.</p>
+                    <p><strong>E-mail:</strong> contato@portalgamer.com</p>
+                    <p style="margin-top: 8px;">Fale com a nossa redação para sugerir pautas, parcerias ou reportar sugestões.</p>
                 </div>
                 <div class="bloco-lateral">
                     <h3 class="titulo-lateral">Newsletter</h3>
                     <p>Receba as novidades no seu e-mail:</p>
-                    <form class="formulario-newsletter">
-                        <input type="email" placeholder="Seu e-mail..." class="campo-email">
+                    <form class="formulario-newsletter" onsubmit="event.preventDefault(); alert('Inscrição realizada com sucesso!');">
+                        <input type="email" placeholder="Seu e-mail..." class="campo-email" required>
                         <button type="submit" class="botao-enviar">Inscrever</button>
                     </form>
                 </div>
@@ -73,5 +79,7 @@
 
     </div>
 
+    <!-- Script JavaScript -->
+    <script src="noticias.js"></script>
 </body>
 </html>
