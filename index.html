@@ -16,16 +16,18 @@
     <p>Tudo sobre o mundo dos jogos</p>
   </header>
 
+  <!-- as duas abas -->
   <nav class="abas">
-    <button class="ativo" data-aba="noticias">Notícias</button>
-    <button data-aba="reviews">Reviews</button>
+    <button id="abaNoticias" class="ativo">Notícias</button>
+    <button id="abaReviews">Reviews</button>
   </nav>
 
+  <!-- as categorias -->
   <nav class="categorias">
-    <button class="ativo" data-cat="todas">Todas</button>
-    <button data-cat="PC">PC</button>
-    <button data-cat="Console">Console</button>
-    <button data-cat="Mobile">Mobile</button>
+    <button id="catTodas" class="ativo">Todas</button>
+    <button id="catPC">PC</button>
+    <button id="catConsole">Console</button>
+    <button id="catMobile">Mobile</button>
   </nav>
 
   <main>
@@ -34,13 +36,13 @@
   </main>
 
   <!-- janela que abre ao clicar em uma notícia -->
-  <div id="modal" class="escondido">
+  <div id="janela" class="escondido">
     <article class="conteudo">
       <button id="fechar">Fechar ✕</button>
-      <span id="m-tag" class="tag"></span>
-      <h2 id="m-titulo"></h2>
-      <p id="m-data" class="data"></p>
-      <p id="m-texto"></p>
+      <span id="j-etiqueta" class="etiqueta"></span>
+      <h2 id="j-titulo"></h2>
+      <p id="j-data" class="data"></p>
+      <p id="j-texto"></p>
     </article>
   </div>
 
